@@ -1,0 +1,32 @@
+1. buat file .htaccess
+2. kemudian sesuaikan code setHandler dibawah ini
+3. contoh kasuh ini versi PHP 5.6
+
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+ 
+ SetHandler application/x-httpd-alt-php56___lsphp
+ 
+</FilesMatch>
+
+4. ini contoh kasus versi PHP 7.2
+
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+ 
+ SetHandler application/x-httpd-alt-php72___lsphp
+ 
+</FilesMatch>
+
+6. berikut untuk versi PHP lainnya
+
+application/x-httpd-alt-php44___lsphp
+application/x-httpd-alt-php51___lsphp
+application/x-httpd-alt-php52___lsphp
+application/x-httpd-alt-php53___lsphp
+application/x-httpd-alt-php54___lsphp
+application/x-httpd-alt-php55___lsphp
+application/x-httpd-alt-php56___lsphp
+application/x-httpd-alt-php70___lsphp
+application/x-httpd-alt-php71___lsphp
+application/x-httpd-alt-php72___lsphp
+
+7. cukup mengganti setHandler dengan point nomor 6, sesuai versi PHP yang diinginkan.!
